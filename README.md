@@ -3,27 +3,18 @@
 
 [![Gitter channel](https://badges.gitter.im/libopencm3/discuss.svg)](https://gitter.im/libopencm3/discuss)
 
-This repository contains assorted example projects for libopencm3.
+此项目库包含libopencm3的各种示例项目。
 
-The libopencm3 project aims to create an open-source firmware library for
-various ARM Cortex-M microcontrollers.
+libopencm3项目旨在为各种ARM Cortex-M微控制器创建一个开源固件库。
 
-For more information visit http://libopencm3.org
+更多信息请访问 http://libopencm3.org
 
-The examples are meant as starting points for different subsystems on multitude
-of platforms. If you're just looking to test your build environment and hardware,
-the [libopencm3-miniblink](https://github.com/libopencm3/libopencm3-miniblink) 
-may be more useful, as it covers _many_ more boards, but it is much more limited.
+这些简单示例是基于多个平台上不同子系统的。如果您只是想测试您的构建环境或硬件，[libopencm3-miniblink](https://github.com/libopencm3/libopencm3-miniblink)项目是一个很好方案。
 
-Feel free to add new examples and send them to us either via the mailinglist or
-preferably via a github pull request.
+## 使用方法
 
-## Usage
-
-You _must_ run "make" in the top level directory first.  This builds the
-library and all examples.  If you're simply hacking on a single example after
-that, you can type "make clean; make" in any of the individual project
-directories later.
+必须先在项目根目录=执行`make`，它构建libopencm3库所示项目。
+如果修其任何示项目可直示项目目运行`make clean && make`命令从新构建项目。
 
 For more verbose output, to see compiler command lines, use "make V=1"
 For insanity levels of verboseness, use "make V=99"
@@ -123,4 +114,3 @@ If you want to use libopencm3 in your own project, the _easiest_ way is
 to use the template repository we created for this purpose.
 
 See https://github.com/libopencm3/libopencm3-template
-
